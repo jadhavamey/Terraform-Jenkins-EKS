@@ -6,17 +6,17 @@ metadata:
     app: nginx
 
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: nginx
-  template:  # Change "templates" to "template"
+  template:
     metadata:
       labels:
         app: nginx
     spec:
-      containers:  # Correct "conatainers" to "containers"
+      containers:
         - name: nginx
           image: nginx:latest
           ports:
-            - containerPort: 80  # Correct "conatinerPort" to "containerPort"
+            - containerPort: 80
